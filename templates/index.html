@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+<body>
+    <h1>Predict the Selling Price of a Used Car</h1>
+    <form action="/predict" method="POST">
+        <label for="present_price">Present Price (Lakhs):</label>
+        <input type="text" name="present_price" required><br>
+
+        <label for="kms_driven">Kms Driven:</label>
+        <input type="text" name="kms_driven" required><br>
+
+        <label for="fuel_type">Fuel Type (0: Diesel, 1: Petrol, 2: CNG):</label>
+        <input type="text" name="fuel_type" required><br>
+
+        <label for="seller_type">Seller Type (0: Dealer, 1: Individual):</label>
+        <input type="text" name="seller_type" required><br>
+
+        <label for="transmission">Transmission (0: Manual, 1: Automatic):</label>
+        <input type="text" name="transmission" required><br>
+
+        <label for="owner">Owner (0: First, 1: Second, 2: Third):</label>
+        <input type="text" name="owner" required><br>
+
+        <label for="age_of_the_car">Age of the Car:</label>
+        <input type="text" name="age_of_the_car" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
